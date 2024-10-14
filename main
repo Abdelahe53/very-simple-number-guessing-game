@@ -1,0 +1,17 @@
+import random
+
+count = 1
+number = 9
+
+print("I'm thinking of a number between 1 and 10. Can you guess what it is?")
+
+while number > count:
+    user = int(input("Enter your guess: "))
+    if user < number:
+        print("Too low! Try again.")
+    if user > number:
+        print("Too high! Try again.")
+
+    if user == number:
+        print("Congratulations! You guessed the number!")
+        break
